@@ -4,6 +4,16 @@ p{
   font-size: 1em;
 }
 
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+button a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
 #home {
     background: url(/img/background-marvel.jpg) no-repeat;
     color: white;
@@ -14,6 +24,10 @@ p{
   background-size: cover;
   width: 100%;
   height: 500px;
+}
+
+#personagens {
+  background: linear-gradient(#140d0d, #480100);
 }
 
 .caixa {
@@ -134,3 +148,128 @@ footer p a {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .fa-star {
+    font-size: 2em;
+    margin-right: 10px;
+  }
+
+  button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #e8e8e8;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+
+   .card {
+    width: 190px;
+    height: 274px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+  
+  .actor-bg1 {
+    background: url(../img/ironman/actor/robert.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .actor-bg2 {
+    background: url(../img/ironman/actor/gwyneth.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .actor-bg3 {
+    background: url(../img/ironman/actor/terrence.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .actor-bg4 {
+    background: url(../img/ironman/actor/stanlee.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .actor-bg5 {
+    background: url(../img/ironman/actor/clark.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .card-image:hover {
+    -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  
+  .character {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+  }
+  
+  .character:hover {
+    cursor: pointer;
+  }
+  
+  .actor-name {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 15px;
+    color: rgb(88, 87, 87);
+  }
+  
+  .actor-name:hover {
+    cursor: pointer;
+  }
+  
