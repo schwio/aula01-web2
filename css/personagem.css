@@ -1,0 +1,8 @@
+.colorMarvel {
+    background: linear-gradient(#140d0d, #480100);
+}
+
+.colorMarvelInverted {
+    background: rgb(20,13,13);
+    background: linear-gradient(0deg, rgba(20,13,13,1) 0%, rgba(72,1,0,1) 100%);
+  }
