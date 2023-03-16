@@ -66,11 +66,13 @@
                           <form action="#">
                                 <div class="form-group">
                                     <label for="nome">Nome do Personagem:</label>
-                                    <input required="" class="form-text" name="nome" id="nome" type="text">
+                                    <input class="form-text" name="nome" id="nome" type="text">
+                                    <p style="display: none; color: red;" id="verify_name">Campo Obrigatório</p>
                                 </div>
                                 <div class="form-group">
                                     <label for="cidade">Cidade Natal:</label>
-                                    <input required="" class="form-text" name="cidade" id="cidade" type="text">
+                                    <input class="form-text" name="cidade" id="cidade" type="text">
+                                    <p style="display: none; color: red;" id="verify_city">Campo Obrigatório</p>
                                 </div>
                                 <div class="form-group">
                                     <label for="classe">Classe</label>
@@ -83,7 +85,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="classe">Raça</label>
-                                    <select class="form-control" name="raca" id="Raca">
+                                    <select class="form-control" name="raca" id="raca">
                                         <option>--Selecione uma Opção--</option>
                                         <option>Humano</option>
                                         <option>Deus</option>
@@ -156,5 +158,8 @@
           <small>Criador - Mateus Soares</small>
         </div>
     </footer>
+
+    <!--Script Validação Formulário-->
+    <script src="./js/form.js"></script>
 
   </body>
